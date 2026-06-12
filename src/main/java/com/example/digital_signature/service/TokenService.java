@@ -39,7 +39,7 @@ public class TokenService {
 
     public KeyStore getKeyStore() {
         if (!loggedIn) {
-            throw new RuntimeException("Token not unlocked. Call /api/token/login first.");
+            throw new RuntimeException("Token not unlocked. you need to login first.");
         }
         return keyStore;
     }
